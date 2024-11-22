@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC Ireland Tour</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/External.css">
+</head>
+<body class="bg-light text-dark">
+    <!-- Header -->
+    <header class="bg-success text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-3" style="font-family: 'Cinzel', serif;">Welcome to Ireland</h1>
+            <p class="lead" style="font-family: 'Roboto', sans-serif;">Discover the Beauty of Dublin, Cork, Galway, and Limerick</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <div class="container">
+        <a class="navbar-brand" href="#" style="font-family: 'Cinzel', serif;">
+		ABC Ireland Tour
+		</a>
+		<!-- Music Player Section -->
+	<div class="text-center my-4">
+		<audio id="backgroundMusic" src="audio/APT.mp3"></audio>
+		<button id="musicControlButton" class="btn btn-success">▶ Play / Pause: ROSE&Bruno Mars = APT</button>
+	</div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#dublin">Dublin</a></li>
+                <li class="nav-item"><a class="nav-link" href="#cork">Cork</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galway">Galway</a></li>
+                <li class="nav-item"><a class="nav-link" href="#limerick">Limerick</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+	</nav>
+
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <section id="dublin" class="text-center py-4 border-bottom border-success bg-orange">
+            <h2 class="text-success">Dublin</h2>
+			 
+	<div class="row justify-content-center">
+        <div class="col-md-4">
+            <img src="images/dublin.jpg" alt="Dublin Landscape 1" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
+        </div>
+        <div class="col-md-4">
+            <img src="images/dublin2.jpg" alt="Dublin Landscape 2" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
+        </div>
+        <div class="col-md-4">
+            <img src="images/dublin3.jpg" alt="Dublin Landscape 3" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
+        </div>
+    </div>
+            <p>The vibrant capital city with rich history and modern vibes.</p>
+        </section>
+
+        <section id="cork" class="text-center py-4 border-bottom border-success bg-orange">
+            <h2 class="text-success">Cork</h2>
+	<div class="row justify-content-center">
+        <div class="col-md-4">
+            <img src="images/cork.jpg" alt="Dublin Landscape 1" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
+        </div>
+        <div class="col-md-4">
+            <img src="images/cork2.jpg" alt="Dublin Landscape 2" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
+        </div>
+        <div class="col-md-4">
+            <img src="images/cork3.jpg" alt="Dublin Landscape 3" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
+        </div>
+    </div>	
+			<p>Known for its cultural heritage and delightful cuisines.</p>
+        </section>
+
+        <section id="galway" class="text-center py-4 border-bottom border-success bg-orange">
+            <h2 class="text-success">Galway</h2>
+	<div class="row justify-content-center">
+        <div class="col-md-4">
+            <img src="images/galway.jpg" alt="Dublin Landscape 1" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
+        </div>
+        <div class="col-md-4">
+            <img src="images/galway2.jpg" alt="Dublin Landscape 2" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
+        </div>
+        <div class="col-md-4">
+            <img src="images/galway3.jpg" alt="Dublin Landscape 3" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
+        </div>
+    </div>		
+			<p>A city of art, music, and breathtaking landscapes.</p>
+        </section>
+
+        <section id="limerick" class="text-center py-4 border-bottom border-success bg-orange">
+            <h2 class="text-success">Limerick</h2>
+	<div class="row justify-content-center">
+        <div class="col-md-4">
+            <img src="images/limerick.jpg" alt="Dublin Landscape 1" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
+        </div>
+        <div class="col-md-4">
+            <img src="images/limerick2.jpg" alt="Dublin Landscape 2" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
+        </div>
+        <div class="col-md-4">
+            <img src="images/limerick3.jpg" alt="Dublin Landscape 3" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
+        </div>
+    </div>		
+			<p>A city with a strong medieval past and modern attractions.</p>
+        </section>
+    </div>
+	
+	<!-- Google Map Section -->
+	<div class="container-fluid px-0">
+    <div style="width: 100%; height: 450px;">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438536.3774439576!2d-10.85641439063367!3d53.354296956079324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4859bae45c4027fb%3A0xcf7c1234cedbf408!2z7JWE7J28656c65Oc!5e0!3m2!1sko!2sie!4v1732273316013!5m2!1sko!2sie" 
+            style="width: 100%; height: 450px; border: 0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+
+	
+	
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Ireland Tour. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/javascript.js"></script>
+</body>
+</html>
+
+
