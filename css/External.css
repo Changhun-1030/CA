@@ -41,7 +41,15 @@ section {
 }
 
 iframe {
-    border: none;
+    border-radius: 8px; 
+}
+
+.review {
+    margin-bottom: 20px;
+}
+
+form .btn {
+    width: 100%; 
 }
 
 
