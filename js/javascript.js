@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("JavaScript is connected!");        
     const form = document.querySelector("form");
+    
     if (form) {
         form.addEventListener("submit", function (event) {
             event.preventDefault(); 
