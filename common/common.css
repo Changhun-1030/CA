@@ -1,6 +1,5 @@
 /* Common header and footer styles */
 header {
-    background-color: white;
     text-align: center;
     padding: 20px;
 }
@@ -8,18 +7,11 @@ header {
 header h1 {
     font-family: 'Cinzel', serif;
     font-size: 3rem;
-	background-color: green;
+    color: green;
 }
 
 header p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-	background-color: orange;
-}
-
-section {
-    background-color: #f9f9f9;
-    padding: 30px;
-    margin: 15px 0;
-    border-radius: 10px;
+    color: orange;
 }
