@@ -1,0 +1,18 @@
+/* Common header and footer styles */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3rem;
+    color: green;
+}
+
+header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color: orange;
+}
+
