@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const message = document.getElementById("message").value;
 
             if (name && email && message) {
-                alert("Thank you for reaching out! We'll get back to you soon.");
+                alert("Thank you for reaching out! We will get back to you soon.");
                 form.reset();
             } else {
                 alert("Please fill out all fields.");
@@ -19,19 +19,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     } 
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-    const music = document.getElementById("backgroundMusic");
-    const button = document.getElementById("musicControlButton");
-
-    button.addEventListener("click", function () {
-        if (music.paused) {
-            music.play();
-            button.textContent = "⏸ Pause: ROSE&Bruno Mars = APT";
-        } else {
-            music.pause();
-            button.textContent = "▶ Play: ROSE&Bruno Mars = APT";
-        }
-    });
-});
-
