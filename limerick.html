@@ -9,8 +9,9 @@
      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
  
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/detail.css">
     <style>
-        p{
+        /* p{
             font-family: "TMA Avenir Next Regular";
             line-height: 1.8;
             margin-bottom: 20px;
@@ -25,9 +26,13 @@
         }
         h2{
             font-family: "TMA Avenir Next Regular";
-            /* font-family: "ioi", sans-serif; */
+           
             font-weight: 800;
         }
+        .active{
+            color: green !important;
+            font-weight: bold;
+        } */
     </style>
 </head>
 <body>
@@ -50,7 +55,7 @@
                     <li class="nav-item"><a class="nav-link" href="./dublin.html">Dublin</a></li>
                     <li class="nav-item"><a class="nav-link" href="./cork.html">Cork</a></li>
                     <li class="nav-item"><a class="nav-link" href="./galway.html">Galway</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Limerick</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Limerick</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
                 </ul>
             </div>
@@ -61,18 +66,16 @@
             <!--total-->
             <div class="row" style="width: 100%;">
                 <div class="container-row bcontent" style="width: 70%; margin: auto;text-align: center;">
-                    <div class="circle-box">
-                        <img src="./images/limerick-total-1.jpeg" class="rounded-circle" alt="Fox in forest" style="width: 150px;" />
+                    <div class="circle-box col-6 col-md-4">
+                        <a href="#Culture"><img src="./images/limerick-total-1.jpeg" class="rounded-circle d-block" alt="Fox in forest" style="width: 150px;" /></a>
                         <h2 class="text-success">Culture</h2>
                     </div>
-                    <div class="circle-box">
-                       
-                        <img src="./images/limerick-total-1.jpeg" class="rounded-circle" alt="Fox in forest" style="width: 150px;" />
+                    <div class="circle-box col-6 col-md-4">
+                        <a href="#Food"><img src="./images/limerick-total-6.jpg" class="rounded-circle d-block" alt="Fox in forest" style="width: 150px;" /></a>
                         <h2 class="text-success">Food</h2>
                     </div>
-                    <div  class="circle-box">
-                     
-                        <img src="./images/limerick-total-1.jpeg" class="rounded-circle" alt="Fox in forest" style="width: 150px;" />
+                    <div class="circle-box col-6 col-md-4">
+                        <a href="#Scenery"><img src="./images/limerick-total-4.jpg" class="rounded-circle d-block" alt="Fox in forest" style="width: 150px;" /></a>
                         <h2 class="text-success">Scenery</h2>
                     </div>
                    
@@ -90,10 +93,9 @@
         </section>
         <section>
             <!--scenery-->
-            <div class="row container-row">
-                <h2 id="Culture" class="text-success" style="font-size: calc(1.0869565217vw + 29.652173913px);">Scenery</h2>
-               
-                <div style="width: 50%;">
+            <h2 id="Scenery" class="text-success" style="font-size: calc(1.0869565217vw + 29.652173913px);">Scenery</h2>
+            <div class="row justify-content-between">
+                <div class="col-md-6">
                     <!--img-->
                     <img src="./images/limerick-scenery-6.jpg" class="d-block w-100" alt="...">
                     <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -127,7 +129,7 @@
                         </button>
                         </div> -->
                 </div>
-                <div style="width: 50%;">
+                <div class="col-md-6">
                     <!--DESC-->
                     <p>
                         Limerick is a city rich in scenic beauty, where historic landmarks and natural landscapes come together. One of the city's most iconic sights is the <mark>River Shannon</mark>, which flows through the heart of Limerick, offering picturesque views and scenic walks along the riverside. The King John’s Castle, located along the river, provides stunning views of the surrounding area, while the <mark>Sarsfield Bridge</mark> offers a charming perspective of the city’s skyline.
@@ -144,10 +146,9 @@
         
         <section>
             <!--food-->
-            <div class="row container-row">
-                <h2 id="Culture" class="text-success" style="font-size: calc(1.0869565217vw + 29.652173913px);">Food</h2>
-               
-                <div style="width: 50%;">
+            <h2 id="Food" class="text-success" style="font-size: calc(1.0869565217vw + 29.652173913px);">Food</h2>
+            <div class="row justify-content-between">               
+                <div class="col-md-6">
                     <!--DESC-->
                     <p>Limerick offers a diverse and vibrant food scene, blending traditional Irish flavors with modern culinary influences. The city is known for its fresh, locally sourced ingredients, particularly seafood from the nearby River Shannon and Atlantic coast. Local specialties include <mark>Limerick ham</mark>, a cured and smoked meat, and <mark>Limerick lamb</mark>, prized for its tenderness and flavor.</p>
                     <p>
@@ -157,7 +158,7 @@
                         In addition to traditional Irish fare, Limerick is home to a growing number of international eateries offering cuisine from across the globe, adding to the city’s culinary diversity. The local <mark>farmers' markets</mark> are a great place to sample regional produce and homemade goods, making food a central part of the city’s culture.
                     </p>
                 </div>
-                <div style="width: 50%;">
+                <div class="col-md-6">
                     <!--img-->
                     <img src="./images/limerick-food-1.jpg" class="d-block w-100" alt="...">
                 </div>
@@ -165,14 +166,13 @@
         </section>
         <section>
             <!--culture-->
-            <div class="row container-row">
-                <h2 id="Culture" class="text-success" style="font-size: calc(1.0869565217vw + 29.652173913px);">Culture</h2>
-               
-                <div style="width: 50%;">
+            <h2 id="Culture" class="text-success" style="font-size: calc(1.0869565217vw + 29.652173913px);">Culture</h2>
+            <div class="row justify-content-between">
+                <div class="col-md-6">
                     <!--img-->
-                    <img src="./images/Limerick culture-1.jpg" alt="">
+                    <img src="./images/Limerick culture-1.jpg" class="d-block w-100" alt="">
                 </div>
-                <div style="width: 50%;">
+                <div class="col-md-6">
                     <!--DESC-->
                     <p>
                         Limerick boasts a rich and dynamic cultural scene that reflects its historical significance and contemporary vibrancy. The city is a hub for the arts, hosting numerous theaters, galleries, and cultural institutions. The Hunt Museum, with its extensive collection of art and antiquities, is a centerpiece of Limerick’s cultural identity.
