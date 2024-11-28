@@ -8,8 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-    <!-- Common CSS -->
+	<!-- Flatpickr CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    
+	<!-- Common CSS -->
     <link rel="stylesheet" href="css/common.css">
 	<!-- Changhun yoo Page-Specific CSS -->
     <!--<link rel="stylesheet" href="css/External.css">-->
@@ -22,6 +24,12 @@
             <p>Discover the Beauty of Dublin, Cork, Galway, and Limerick</p>
         </div>
     </header>
+	
+	<!-- Discount Message -->
+	<div class="bg-warning text-dark text-center py-3">
+        <h3>🎄 Christmas & New Year Special: Enjoy 10% to 20% Discount! 🎉 <strong>Don't miss this opportunity</strong></h3>
+    </div>
+	
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
@@ -59,8 +67,14 @@
             <img src="images/dublin3.jpg" alt="Dublin Landscape 3" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
         </div>
     </div>
-            <p>The vibrant capital city with rich history and modern vibes.</p>
-     </section>
+            <p>The vibrant capital city with rich history and modern vibes.<strong>Estimated Daily Cost: €100 - €150</strong></p>
+		
+		<!-- Calendar and Reservation Buttons -->		
+		<div class="mt-3">
+			<input type="date" id="dublinDate" class="form-control w-50 mx-auto mb-2">
+			<button class="btn btn-primary booking-button" data-city = "Dublin">Book Dublin</button>
+		</div>
+		</section>
 
         <section id="cork" class="text-center py-4 border-bottom border-success bg-orange">
             <h2 class="text-success">Cork</h2>
@@ -75,8 +89,14 @@
             <img src="images/cork3.jpg" alt="Dublin Landscape 3" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
         </div>
     </div>	
-			<p>Known for its cultural heritage and delightful cuisines.</p>
-        </section>
+			<p>Known for its cultural heritage and delightful cuisines.<strong>Estimated Daily Cost: €80 - €120</strong></p>
+			
+		<!-- Calendar and Reservation Buttons -->		
+		<div class="mt-3">
+			<input type="date" id="CorkDate" class="form-control w-50 mx-auto mb-2">
+			<button class="btn btn-primary booking-button" data-city = "Cork">Book Cork</button>
+		</div>
+		</section>
 
         <section id="galway" class="text-center py-4 border-bottom border-success bg-orange">
             <h2 class="text-success">Galway</h2>
@@ -91,8 +111,14 @@
             <img src="images/galway3.jpg" alt="Dublin Landscape 3" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
         </div>
     </div>		
-			<p>A city of art, music, and breathtaking landscapes.</p>
-        </section>
+			<p>A city of art, music, and breathtaking landscapes.<strong>Estimated Daily Cost: €90 - €140</strong></p>
+			
+		<!-- Calendar and Reservation Buttons -->		
+		<div class="mt-3">
+			<input type="date" id="GalwayDate" class="form-control w-50 mx-auto mb-2">
+			<button class="btn btn-primary booking-button" data-city = "Galway">Book Galway</button>
+		</div>
+		</section>
 
         <section id="limerick" class="text-center py-4 border-bottom border-success bg-orange">
             <h2 class="text-success">Limerick</h2>
@@ -107,8 +133,13 @@
             <img src="images/limerick3.jpg" alt="Dublin Landscape 3" class="img-fluid rounded mb-3" style="height: 300px; object-fit: cover;">
         </div>
     </div>		
-			<p>A city with a strong medieval past and modern attractions.</p>
-        </section>
+			<p>A city with a strong medieval past and modern attractions.<strong>Estimated Daily Cost: €70 - €110</strong></p>
+		<!-- Calendar and Reservation Buttons -->		
+		<div class="mt-3">
+			<input type="date" id="LimerickDate" class="form-control w-50 mx-auto mb-2">
+			<button class="btn btn-primary booking-button" data-city = "Limerick">Book Limerick</button>
+		</div>
+		</section>
  </div>
 	
 	<div class="container my-5">
@@ -159,6 +190,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Flatpickr JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="javascript.js"></script>
 </body>
 </html>
