@@ -7,9 +7,10 @@
      <!-- Bootstrap CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
- 
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/detailByJuan.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         /* h5{
             font-size: 2.25rem !important;font-weight: 600;font-family: 'TMA Cormorant Bold';
@@ -44,9 +45,13 @@
     <header>
         <div class="container">
             <h1>Welcome to Ireland</h1>
-            <p>Discover the Beauty of Galway</p>
+            <p style="margin-bottom: 1rem !important;">Discover the Beauty of Galway</p>
         </div>
     </header>
+    <div class="contact" onclick="clickToContact();">
+        <i class="bi bi-person-fill" style=" font-size: 3rem;"></i>
+        <span>Contact</span>
+    </div>
      <!-- Navigation Bar -->
      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
         <div class="container">
@@ -61,14 +66,28 @@
                     <li class="nav-item"><a class="nav-link" href="./cork.html">Cork</a></li>
                     <li class="nav-item"><a class="nav-link active" href="./galway.html">Galway</a></li>
                     <li class="nav-item"><a class="nav-link" href="./limerick.html">Limerick</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li> -->
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container my-5">
+    <div class="container my-5" style="margin-top: 0.3rem !important;">
+        <!--search-->
+        <section>
+            <form style="display: flex;">
+                <div class="row g-3" style="margin-left: auto;">
+                    <div class="col-auto" >
+                        <label for="inputPassword2" class="visually-hidden">Keyword</label>
+                        <input type="text" class="form-control" id="inputPassword2" placeholder="Keyword">
+                    </div>
+                    <div class="col-auto" >
+                        <button type="button" class="btn btn-primary mb-3" id="doSubmit">Search</button>
+                    </div>
+                </div>
+            </form>
+        </section>
         <!---total--->
-        <section  class="py-4 bg-orange">
+        <section  class="py-4 bg-orange" style="padding-top: 0 !important;">
             <div class="row" >
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators" >
@@ -118,64 +137,7 @@
                 </p>
             </div>
         </section>
-
-        <section style="display: inline-block;" class="py-4 bg-orange">
-            <!--culture-->
-            <div class="row">
-                <h2 id="Culture" class="text-success" style="font-size: calc(1.0869565217vw + 29.652173913px);">Culture</h2>
-                <p>
-                    Our country’s fourth-largest city has a unique character that attracts visitors from near and far. But did you know that Galway is known as Ireland’s cultural heart?
-                </p>
-                <p>
-                    This incredible city has so much to offer art lovers, music enthusiasts, theatergoers, and anyone who appreciates a lively and welcoming atmosphere. It’s no surprise, then, that Galway is one of the most popular destinations on our tours in Ireland.
-                </p>
-                <img src="./images/galway-arts-festival-1.jpg" alt="">
-                <p>
-                    One of the main reasons Galway is known as Ireland’s cultural heart is its vibrant arts and festival scene.  Galway hosts several major festivals throughout the year, attracting visitors from all over the world.
-                </p>
-                
-                <img src="./images/galway-arts-festival-2.jpg" alt="">
-                <p>
-                    The Galway International Arts Festival, which takes place every July, is one of the largest multidisciplinary arts festivals in the world. It features theatre, music, visual arts, and dance performances, making it an incredible experience for anyone lucky enough to attend.
-                </p>
-                <p>
-                    And there’s far more besides! Galway also hosts the Galway Film Fleadh, the Galway Theatre Festival, and the Cuirt International Festival of Literature, to name only a few. These events showcase and celebrate various art forms and provide a fantastic opportunity to immerse yourself in Irish culture.
-                </p>
-                <img src="./images/galway-arts-festival-3.jpg" alt="">
-                
-            </div>
-            
-        </section>
-
-        <section class="py-4 bg-orange">
-            <!--food-->
-            <div class="row">
-                <h2 id="Food" class="text-success" style="font-size: calc(1.0869565217vw + 29.652173913px);">Food</h2>
-                <p>Galway, a vibrant city on the west coast of Ireland, is renowned for its rich culinary scene, blending traditional Irish fare with contemporary influences. The city offers a delightful mix of seafood, hearty stews, and locally-sourced produce, all complemented by a lively atmosphere. Here are some highlights of Galway's food culture:</p>
-                <p>
-                    <mark>Seafood:</mark> Galway is famous for its fresh seafood, particularly oysters. The city's location on the Atlantic Ocean provides an abundance of fish and shellfish, including Galway Bay oysters, which are celebrated for their delicate flavor. Many restaurants, such as those in the bustling Galway Fish Market, serve a variety of fresh fish, crab, and mussels.
-                </p>
-                <p>
-                    <mark>Irish Stew</mark>: A classic Irish dish, Galway's version of Irish stew is hearty and comforting. Made with lamb or beef, potatoes, carrots, onions, and herbs, this dish is a staple of traditional Irish cuisine.
-                </p>
-                <p>
-                    <mark>Sodabread and Brown Bread</mark>: Traditional Irish breads, like soda bread and brown bread, are commonly served with meals in Galway. These dense, rustic breads are often enjoyed with butter or alongside a hot bowl of soup
-                </p>
-                <p>
-                    <mark>Smoked Salmon</mark>: Irish smoked salmon is a specialty, and Galway is no exception. Locally sourced salmon is smoked to perfection, often served with crusty bread or in a salad.
-                </p>
-                <p>
-                    <mark>Galway Bay Crab and Lobster</mark>: The waters around Galway are rich in crab and lobster, and these delicacies are often featured on local menus. Whether boiled, grilled, or served with a rich butter sauce, they are a must-try for seafood lovers.
-                </p>
-                <div class="image-container">
-                    <img src="./images/galway-food-1.jpg" alt="">
-                    <img src="./images/galway-food-2.jpg" alt="">
-                    <img src="./images/galway-food-3.png" alt="">
-                    <img src="./images/galway-food-4.jpeg" alt="">
-                </div>
-                
-            </div>
-        </section>
+       
         <section class="py-4 bg-orange">
             <!--scenery-->
             <div class="row">
@@ -284,10 +246,71 @@
             </div>
         </div>
         </section>
+        <section class="py-4 bg-orange">
+            <!--food-->
+            <div class="row">
+                <h2 id="Food" class="text-success" style="font-size: calc(1.0869565217vw + 29.652173913px);">Food</h2>
+                <p>Galway, a vibrant city on the west coast of Ireland, is renowned for its rich culinary scene, blending traditional Irish fare with contemporary influences. The city offers a delightful mix of seafood, hearty stews, and locally-sourced produce, all complemented by a lively atmosphere. Here are some highlights of Galway's food culture:</p>
+                <p>
+                    <mark>Seafood:</mark> Galway is famous for its fresh seafood, particularly oysters. The city's location on the Atlantic Ocean provides an abundance of fish and shellfish, including Galway Bay oysters, which are celebrated for their delicate flavor. Many restaurants, such as those in the bustling Galway Fish Market, serve a variety of fresh fish, crab, and mussels.
+                </p>
+                <p>
+                    <mark>Irish Stew</mark>: A classic Irish dish, Galway's version of Irish stew is hearty and comforting. Made with lamb or beef, potatoes, carrots, onions, and herbs, this dish is a staple of traditional Irish cuisine.
+                </p>
+                <p>
+                    <mark>Sodabread and Brown Bread</mark>: Traditional Irish breads, like soda bread and brown bread, are commonly served with meals in Galway. These dense, rustic breads are often enjoyed with butter or alongside a hot bowl of soup
+                </p>
+                <p>
+                    <mark>Smoked Salmon</mark>: Irish smoked salmon is a specialty, and Galway is no exception. Locally sourced salmon is smoked to perfection, often served with crusty bread or in a salad.
+                </p>
+                <p>
+                    <mark>Galway Bay Crab and Lobster</mark>: The waters around Galway are rich in crab and lobster, and these delicacies are often featured on local menus. Whether boiled, grilled, or served with a rich butter sauce, they are a must-try for seafood lovers.
+                </p>
+                <div class="image-container">
+                    <img src="./images/galway-food-1.jpg" alt="">
+                    <img src="./images/galway-food-2.jpg" alt="">
+                    <img src="./images/galway-food-3.png" alt="">
+                    <img src="./images/galway-food-4.jpeg" alt="">
+                </div>
+                
+            </div>
+        </section>
+        <section style="display: inline-block;" class="py-4 bg-orange">
+            <!--culture-->
+            <div class="row">
+                <h2 id="Culture" class="text-success" style="font-size: calc(1.0869565217vw + 29.652173913px);">Culture</h2>
+                <p>
+                    Our country’s fourth-largest city has a unique character that attracts visitors from near and far. But did you know that Galway is known as Ireland’s cultural heart?
+                </p>
+                <p>
+                    This incredible city has so much to offer art lovers, music enthusiasts, theatergoers, and anyone who appreciates a lively and welcoming atmosphere. It’s no surprise, then, that Galway is one of the most popular destinations on our tours in Ireland.
+                </p>
+                <img src="./images/galway-arts-festival-1.jpg" alt="">
+                <p>
+                    One of the main reasons Galway is known as Ireland’s cultural heart is its vibrant arts and festival scene.  Galway hosts several major festivals throughout the year, attracting visitors from all over the world.
+                </p>
+                
+                <img src="./images/galway-arts-festival-2.jpg" alt="">
+                <p>
+                    The Galway International Arts Festival, which takes place every July, is one of the largest multidisciplinary arts festivals in the world. It features theatre, music, visual arts, and dance performances, making it an incredible experience for anyone lucky enough to attend.
+                </p>
+                <p>
+                    And there’s far more besides! Galway also hosts the Galway Film Fleadh, the Galway Theatre Festival, and the Cuirt International Festival of Literature, to name only a few. These events showcase and celebrate various art forms and provide a fantastic opportunity to immerse yourself in Irish culture.
+                </p>
+                <img src="./images/galway-arts-festival-3.jpg" alt="">
+                
+            </div>
+            
+        </section>
+
     </div>
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Ireland Tour. All Rights Reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/detailByJuan.js"></script>
+    <script>
+
+    </script>
 </body>
 </html>

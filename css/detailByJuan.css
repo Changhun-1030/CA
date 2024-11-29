@@ -48,3 +48,11 @@ h4{
     margin-top: 20px;
 }
 
+.contact{
+    z-index: 1000;
+    position: fixed;
+    width: 24px;
+    bottom: 50px;
+    right: 43px;
+    color: green;
+ }
